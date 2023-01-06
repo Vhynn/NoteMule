@@ -11,19 +11,20 @@
     <script src="WordList.js" defer></script>
     <script src="notes.js" defer></script>
     <script src="pwTool.js" defer></script>
+    <script src="templates.js" defer></script>
     </head>
 
-    <body>
+    <body> 
         <div class="Dropdown__Container">
             <div class="Dropdown">
                 <button class="Dropdown--Button">Tools</button>
-                <div class="Dropdown--Content">
-                    <a href="#" class="Navigation--Notes">Notes</a>
-                    <a href="#" class="Navigation--PW">Password Generator</a>
-                    <a href="#">Template Editor</a>
-                </div>
-            </div>
-            <div class="Dropdown2">
+                    <div class="Dropdown--Content">
+                        <a href="#" class="Navigation--Notes">Notes</a>
+                        <a href="#" class="Navigation--PW">Password Generator</a>
+                        <a href="#" class="Navigation--Templates">Template Editor</a>
+                    </div>
+                </div>  
+                <div class="Dropdown2">
                 <button class="Dropdown--Button2">Templates</button>
                 <div class="Dropdown--Content2">
                     <a href="#">PLACEHOLDER</a>
@@ -32,6 +33,26 @@
                 </div>
             </div>
         </div>
+        <div class="Page--Notes">
+            <div class="Editor--Container">
+                <div class="Editor--Container2">
+                    <p>Notes</p>
+                    <div id="editor" class="Editor"></div>
+                </div>
+            </div>
+            <div class="Buttons">
+                <button class="Button--Copy">Copy</button>
+                <button class="Button--Clear">Clear</button>
+            </div>
+        </div>
         <div class="Page__Container"></div>
     </body>
+    <script>
+        var quill = new Quill('#editor', {
+            theme: 'snow',
+            modules: {
+                'clipboard': true
+            }
+        });
+    </script>
 </html>

@@ -16,13 +16,14 @@ body{
 }
 
 /*Notes Page*/
+.Page--Notes{
+    height: 100vh;
+}
 .Editor--Container2{
     height: 85%;
-    min-height: 1000px;
 }
 .Editor--Container{
     height: 85%;
-    min-height: 1000px;
     overflow:auto
 }
 .Toolbar__Container{
@@ -52,6 +53,9 @@ body{
 }
 
 /*Password Generator*/
+.Title--Password{
+    margin-top: 20vh;
+}
 .TextBox--Password{
     font-size: large;
     text-align: center;
@@ -89,6 +93,49 @@ body{
     color: white;
 }
 
+/*Template management*/
+.Button--Create{
+    width: 390px;
+    height: 40px;
+    margin: 15px;
+    margin-top: 10vh;
+    border: 0px;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+    background: rgb(32, 68, 50);
+}
+.Button--Edit{
+    width: 390px;
+    height: 40px;
+    margin: 15px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+    background: #39476c;
+}
+.Button--Delete{
+    width: 390px;
+    height: 40px;
+    margin: 15px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+    background: #634065;
+}
+.Button--Cancel{
+    width: 195px;
+    height: 20px;
+    margin: 15px;
+    margin-top: 50vh;
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    background: #492f4a;
+}
+
 /*Dropdown Bars*/
 .Dropdown__Container{
     display: flex;
@@ -100,7 +147,6 @@ body{
     padding: 16px;
     font-size: 16px;
     border: none;
-    padding-left: 61px;
 }
 .Dropdown{
     min-width: 160px;

@@ -1,13 +1,17 @@
-const pwPage = "<p>Password</p>\n<div>\n\t<input type=\"text\" class=\"TextBox--Password\" placeholder=\"Password will generate here\"/>\n</div>\n<button class=\"Button--Generate\">Generate Password</button>\n<div class=\"Button__Holder--Lower\">\n<button class=\"Button--Copy2\">Copy</button>\n\t<button class=\"Button--Back\">Back</button>\n</div>"
+const pwPage = "<p class=\"Title--Password\">Password</p>\n<div>\n\t<input type=\"text\" class=\"TextBox--Password\" placeholder=\"Password will generate here\"/>\n</div>\n<button class=\"Button--Generate\">Generate Password</button>\n<div class=\"Button__Holder--Lower\">\n<button class=\"Button--Copy2\">Copy</button>\n\t<button class=\"Button--Back\">Back</button>\n</div>"
 const wordList = words.split(',');
+const pageContainer = document.querySelector('.Page__Container');
 
 document.querySelector('.Navigation--PW').addEventListener('click', LoadPwPage)
 
 function LoadPwPage(){
+    document.querySelector('.Page--Notes').style.display = "none";
+
     pageContainer.innerHTML = pwPage;
 
     document.querySelector('.Button--Generate').addEventListener('click', GeneratePassword);
     document.querySelector('.Button--Copy2').addEventListener('click', CopyPassword);
+    document.querySelector('.Button--Back').addEventListener('click', LoadNotes);
 }
 
 function GenerateRandom(min, max){

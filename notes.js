@@ -1,20 +1,14 @@
-const notesPage = "<div class=\"Editor--Container\">\n<div class=\"Editor--Container2\">\n\t<p>Notes</p>\n\t<div id=\"editor\" class=\"Editor\"></div>\n</div>\n</div>\n<div class=\"Buttons\">\n<button class=\"Button--Copy\">Copy</button>\n<button class=\"Button--Clear\">Clear</button>\n</div>";
-let pageContainer = document.querySelector('.Page__Container');
+document.querySelector('.Navigation--Notes').addEventListener('click', LoadNotes);
 
-document.querySelector('.Navigation--Notes').addEventListener('click', LoadNotes)
+document.querySelector('.Button--Clear').addEventListener('click', ClearEditor);
+document.querySelector('.Button--Copy').addEventListener('click', CopyToClipboard);
 
 function LoadNotes(){
-    pageContainer.innerHTML = notesPage;
+    var display = document.querySelector('.Page--Notes');
 
-    var quill = new Quill('#editor', {
-        theme: 'snow',
-        modules: {
-          'clipboard': true
-        }
-      });
-
-    document.querySelector('.Button--Clear').addEventListener('click', ClearEditor);
-    document.querySelector('.Button--Copy').addEventListener('click', CopyToClipboard)
+    if (display.style.display === "none"){
+        display.style.display = "block";
+    }
 }
 
 function ClearEditor(){
