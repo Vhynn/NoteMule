@@ -3,6 +3,7 @@ html{
     color: rgb(222, 222, 222);
     min-height: 100vh;
     font-family: sans-serif;
+    text-align: center;
 }
 button:hover{
     background: #626262;
@@ -13,11 +14,15 @@ button:active{
 body{
     height: 100vh;
 }
+
+/*Notes Page*/
 .Editor--Container2{
     height: 85%;
+    min-height: 1000px;
 }
 .Editor--Container{
     height: 85%;
+    min-height: 1000px;
     overflow:auto
 }
 .Toolbar__Container{
@@ -46,6 +51,44 @@ body{
     text-align: center;
 }
 
+/*Password Generator*/
+.TextBox--Password{
+    font-size: large;
+    text-align: center;
+    margin: 7px;
+    height: 40px;
+    background-color: rgb(47, 47, 47);
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+}
+.Button--Generate{
+    width: 258px;
+    height: 26px;
+    border: 0px;
+    border-radius: 10px;
+    background: rgb(32, 68, 50);
+    color: white;
+}
+.Button--Copy2{
+    width: 122px;
+    height: 26px;
+    border: 0px;
+    border-radius: 10px;
+    margin: 7px;
+    background: #39476c;
+    color: white;
+}
+.Button--Back{
+    width: 122px;
+    height: 26px;
+    border: 0px;
+    border-radius: 10px;
+    margin: 7px;
+    background: #634065;
+    color: white;
+}
+
 /*Dropdown Bars*/
 .Dropdown__Container{
     display: flex;
@@ -57,6 +100,7 @@ body{
     padding: 16px;
     font-size: 16px;
     border: none;
+    padding-left: 61px;
 }
 .Dropdown{
     min-width: 160px;
@@ -81,7 +125,7 @@ body{
 
 .Dropdown:hover .Dropdown--Content {display: block;}
 
-.Dropdown:hover .Dropdown--Button {background-color: #345855;}
+.Dropdown:hover .Dropdown--Button {background-color: #2C4947;}
     
 .Dropdown--Button2 {
     background-color: #2C4947;
@@ -113,4 +157,4 @@ body{
         
 .Dropdown2:hover .Dropdown--Content2 {display: block;}
         
-.Dropdown2:hover .Dropdown--Button2 {background-color: #345855;}
+.Dropdown2:hover .Dropdown--Button2 {background-color: #2C4947;}

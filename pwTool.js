@@ -1,7 +1,14 @@
-document.querySelector('.Button--Generate').addEventListener('click', GeneratePassword);
-document.querySelector('.Button--Copy').addEventListener('click', CopyPassword);
-
+const pwPage = "<p>Password</p>\n<div>\n\t<input type=\"text\" class=\"TextBox--Password\" placeholder=\"Password will generate here\"/>\n</div>\n<button class=\"Button--Generate\">Generate Password</button>\n<div class=\"Button__Holder--Lower\">\n<button class=\"Button--Copy2\">Copy</button>\n\t<button class=\"Button--Back\">Back</button>\n</div>"
 const wordList = words.split(',');
+
+document.querySelector('.Navigation--PW').addEventListener('click', LoadPwPage)
+
+function LoadPwPage(){
+    pageContainer.innerHTML = pwPage;
+
+    document.querySelector('.Button--Generate').addEventListener('click', GeneratePassword);
+    document.querySelector('.Button--Copy2').addEventListener('click', CopyPassword);
+}
 
 function GenerateRandom(min, max){
     return Math.floor(Math.random() * (max - min + 1) + min)
