@@ -20,7 +20,7 @@ function GenerateRandom(min, max){
 
 function GenerateSeperator(){
     const symbols = ['!', '@', '#', '$', '%', '&', '*'];
-    let seperator = GenerateRandom(0, 999).toString() + symbols[GenerateRandom(0, 6)];
+    const seperator = GenerateRandom(0, 999).toString() + symbols[GenerateRandom(0, 6)];
 
     while (seperator.length<4){
         seperator = '0' + seperator;
@@ -30,7 +30,7 @@ function GenerateSeperator(){
 }
 
 function GeneratePassword(){
-    let password = wordList[GenerateRandom(0, (wordList.length - 1))] + GenerateSeperator() + wordList[GenerateRandom(0, (wordList.length - 1))];
+    const password = wordList[GenerateRandom(0, (wordList.length - 1))] + GenerateSeperator() + wordList[GenerateRandom(0, (wordList.length - 1))];
     document.querySelector('.TextBox--Password').value = password;
 }
 

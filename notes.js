@@ -4,7 +4,7 @@ document.querySelector('.Button--Clear').addEventListener('click', ClearEditor);
 document.querySelector('.Button--Copy').addEventListener('click', CopyToClipboard);
 
 function LoadNotes(){
-    var display = document.querySelector('.Page--Notes');
+    const display = document.querySelector('.Page--Notes');
 
     if (display.style.display === "none"){
         display.style.display = "block";
@@ -12,7 +12,7 @@ function LoadNotes(){
 }
 
 function ClearEditor(){
-    let conf = confirm('Are you sure you want to clear all notes?', 'Yes' | 'No');
+    const conf = confirm('Are you sure you want to clear all notes?', 'Yes' | 'No');
     
     if (conf === true){
         quill.setText('')
