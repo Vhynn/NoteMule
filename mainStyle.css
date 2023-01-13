@@ -3,6 +3,8 @@ html{
     color: rgb(222, 222, 222);
     min-height: 100vh;
     font-family: sans-serif;
+    text-align: center;
+    margin: 0px;
 }
 button:hover{
     background: #626262;
@@ -11,6 +13,12 @@ button:active{
     color: grey;
 }
 body{
+    height: 100vh;
+    margin: 0px;
+}
+
+/*Notes Page*/
+.Page--Notes{
     height: 100vh;
 }
 .Editor--Container2{
@@ -46,10 +54,155 @@ body{
     text-align: center;
 }
 
+/*Password Generator*/
+.Title--Password{
+    margin-top: 20vh;
+}
+.TextBox--Password{
+    font-size: large;
+    text-align: center;
+    margin: 7px;
+    height: 40px;
+    width: 258px;
+    background-color: rgb(47, 47, 47);
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+}
+.Button--Generate{
+    width: 258px;
+    height: 26px;
+    border: 0px;
+    border-radius: 10px;
+    background: rgb(32, 68, 50);
+    color: white;
+}
+.Button--Copy2{
+    width: 122px;
+    height: 26px;
+    border: 0px;
+    border-radius: 10px;
+    margin: 7px;
+    background: #39476c;
+    color: white;
+}
+.Button--Back{
+    width: 122px;
+    height: 26px;
+    border: 0px;
+    border-radius: 10px;
+    margin: 7px;
+    background: #634065;
+    color: white;
+}
+
+/*Template management*/
+.Button--Create{
+    width: 390px;
+    height: 40px;
+    margin: 15px;
+    margin-top: 10vh;
+    border: 0px;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+    background: rgb(32, 68, 50);
+}
+.Button--Edit{
+    width: 390px;
+    height: 40px;
+    margin: 15px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+    background: #39476c;
+}
+.Button--Delete{
+    width: 390px;
+    height: 40px;
+    margin: 15px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+    background: #634065;
+}
+.Button--Cancel{
+    width: 195px;
+    height: 20px;
+    margin: 15px;
+    margin-top: 50vh;
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    background: #492f4a;
+}
+.Editor__Template--Container{
+    height: 67vh;
+}
+.Editor__Template--Container2{
+    height: 90%;
+}
+.Button__Edit--Save{
+    width: 165px;
+    margin: 10px;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    height: 26px;
+    background: #39476c;
+}
+.Button__Edit--Cancel{
+    width: 165px;
+    margin: 10px;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    height: 26px;
+    background: #634065;
+}
+.Textbox--Name{
+    color: white;
+    background: rgb(61, 61, 61);
+    border: 0px;
+}
+.Textbox--Name:focus{
+    outline: 0cm;
+}
+.Label__Midpage{
+    margin-top: 20vh;
+}
+.Selector--Templates{
+    background: rgb(61, 61, 61);
+    color: white;
+    border: 0px;
+    font-size: x-large;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+.Selector--Templates:focus{
+    outline: 0cm;
+}
+.Button__Edit--Delete{
+    width: 300px;
+    height: 30px;
+    margin: 15px;
+    margin-bottom: 40vh;
+    border: 0px;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+    background: #754977;
+}
+
 /*Dropdown Bars*/
 .Dropdown__Container{
     display: flex;
     background: #2C4947;
+    text-align: center;
+    align-items: center;
 }
 .Dropdown--Button{
     background-color: #2C4947;
@@ -81,7 +234,7 @@ body{
 
 .Dropdown:hover .Dropdown--Content {display: block;}
 
-.Dropdown:hover .Dropdown--Button {background-color: #345855;}
+.Dropdown:hover .Dropdown--Button {background-color: #2C4947;}
     
 .Dropdown--Button2 {
     background-color: #2C4947;
@@ -113,4 +266,4 @@ body{
         
 .Dropdown2:hover .Dropdown--Content2 {display: block;}
         
-.Dropdown2:hover .Dropdown--Button2 {background-color: #345855;}
+.Dropdown2:hover .Dropdown--Button2 {background-color: #2C4947;}
