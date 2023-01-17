@@ -19,8 +19,8 @@ Click the 'generate' button to generate a password. The Password will consist of
 #### -Editor Page-
 The Editor page displays three buttons that will lead to three more pages.
 ##### -Create-
-    The create page will let you create a template. Input a name that will display in the toolbar dropdown and then write whatever you want the contents to be. **Currently only text is supported for templates.**
+The create page will let you create a template. Input a name that will display in the toolbar dropdown and then write whatever you want the contents to be. **Currently only text is supported for templates.**
 ##### -Edit-
-    The Edit page will let you select an already existing template from the dropdown at the top and edit it's text contents.
+The Edit page will let you select an already existing template from the dropdown at the top and edit it's text contents.
 ##### -Delete-
-    Select a template from the dropdown and then click the delete button to remove the template.
+Select a template from the dropdown and then click the delete button to remove the template.
