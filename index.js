@@ -22,7 +22,12 @@ const FillTemplates = () => {
 
     for (child of templateList.children){
         child.addEventListener('click', (event) => {
-            quill.setText(store.get(event.target.text));
+            
+            const conf = confirm('Loading a template will clear all notes, do you wish to proceed?', 'Yes' | 'No');
+    
+            if (conf === true){
+                quill.setText(store.get(event.target.text));
+            }
         })
     }
 }
