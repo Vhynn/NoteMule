@@ -64,22 +64,6 @@ document.querySelector('.Button--Clear').addEventListener('click', () => {
     }
 });
 
-document.querySelector('.Button--Copy').addEventListener('click', () => {
-    // var content = document.querySelector('.ql-editor');
-    // var children = content.children;
-    // let clipboardPack = [];
-
-    // if (children > 0){
-    //     for(var i=0; i<children.length ; i++){
-    //         let item = new ClipboardItem(children[i].content);
-    //         clipboardPack.push(item)
-    //     }
-    // }
-    // navigator.clipboard.write(clipboardPack);
-    alert('Press ctrl+a, then press ctrl+c if on a documentdows machine. If on a Mac, press command+a and then command+c.');
-    focus(document.querySelector('.ql-editor'))
-});
-
 //PW TOOL SCRIPT
 
 const pwPage = "<p class=\"Title--Password\">Password</p>\n<div>\n\t<input type=\"text\" class=\"TextBox--Password\" placeholder=\"Password will generate here\"/>\n</div>\n<button class=\"Button--Generate\">Generate Password</button>\n<div class=\"Button__Holder--Lower\">\n<button class=\"Button--Copy2\">Copy</button>\n\t<button class=\"Button--Back\">Back</button>\n</div>";
